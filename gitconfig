@@ -1,5 +1,6 @@
 [user]
-  name = Connor Glosser
+  name  = Connor Glosser
+  email = glosser.ca@gmail.com
 [merge]
   tool = meld 
 [color]
