@@ -1,0 +1,14 @@
+[user]
+	email = glosser.ca@gmail.com
+	name = Connor Glosser
+[merge]
+	tool = meld 
+[color]
+    ui = auto
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log
