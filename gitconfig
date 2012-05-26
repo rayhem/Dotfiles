@@ -1,7 +1,7 @@
 [user]
-	name = Connor Glosser
+  name = Connor Glosser
 [merge]
-	tool = meld 
+  tool = meld 
 [color]
   ui = auto
 [alias]
