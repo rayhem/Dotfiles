@@ -14,9 +14,9 @@ set mouse=a
 set nocompatible
 set noerrorbells
 set nohlsearch
-set shiftwidth=2
+set shiftwidth=4
 set showmatch
-set tabstop=2
+set tabstop=4
 set textwidth=0
 
 "set foldmethod=marker
