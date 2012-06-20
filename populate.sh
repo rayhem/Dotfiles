@@ -2,7 +2,7 @@
 # Automatically create symbolic links to version-controlled files
 
 DOTFILE_DIR=`pwd`
-DOTFILES="gitconfig gvimrc nethackrc vimrc zshrc"
+DOTFILES="conkyrc gitconfig gvimrc nethackrc vimrc zshrc"
 
 for file in $DOTFILES; do
     if [ -L $HOME/$file ]; then
