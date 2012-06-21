@@ -5,7 +5,7 @@ out_to_console no
 font 7x13
 own_window_transparent yes
 xftalpha 1.0
-update_interval 5
+update_interval 2
 own_window no
 double_buffer yes
 minimum_size 5 5
@@ -34,7 +34,7 @@ ${color #839CA0}SYSTEM
 ${color white}${hr 1}
   ${color #888888}Kernel: ${color #CCCCCC}$kernel ${color #888888}${alignr}Uptime: ${color #CCCCCC}$uptime
   ${color #888888}CPU   : ${color #CCCCCC}$freq MHz   $cpu%
-  ${color #888888}        ${cpugraph 15,210 ff0000 ff00ff}
+  ${color #888888}        ${cpugraph 15,230 000000 ff0000}
   ${color #888888}RAM   : ${color #CCCCCC}$memmax     $memperc%  ${membar 6}
   ${color #888888}Swap  : ${color #CCCCCC}$swapmax     $swapperc%  ${swapbar 6}
 
@@ -56,9 +56,9 @@ ${color white}${hr 1}
   ${color #CCCCCC}${top_mem name 2} ${top_mem pid 2} ${top_mem cpu 2} ${top_mem mem 2}
   ${color #CCCCCC}${top_mem name 3} ${top_mem pid 3} ${top_mem cpu 3} ${top_mem mem 3}
 
-${color #839CA0}NOW PLAYING
-${color white}${hr 1}
- ${color #888888}Artist: ${color #CCCCCC}$mpd_artist
- ${color #888888}Title : ${color #CCCCCC}${mpd_title 30}
- ${color #CCCCCC}$mpd_bar
- ${color #CCCCCC}$mpd_elapsed/$mpd_length ${alignc}$mpd_status ${alignr}$mpd_percent%
+#${color #839CA0}NOW PLAYING
+#${color white}${hr 1}
+# ${color #888888}Artist: ${color #CCCCCC}$mpd_artist
+# ${color #888888}Title : ${color #CCCCCC}${mpd_title 30}
+# ${color #CCCCCC}$mpd_bar
+# ${color #CCCCCC}$mpd_elapsed/$mpd_length ${alignc}$mpd_status ${alignr}$mpd_percent%
