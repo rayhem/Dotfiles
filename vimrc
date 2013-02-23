@@ -26,10 +26,8 @@ let fortran_do_enddo=1
 let fortran_free_source=1
 let mapleader=","
 
-" Taglist
-nnoremap <silent> <F8> :TlistToggle<CR>
-
-" Folding
-set foldopen-=search
-set foldopen-=undo
-:au FileType c,cpp :set cindent
+" Options for vim-latexsuite (recommended by
+" /usr/share/doc/vim-latexsuite/README.Debian)
+set grepprg=grep\ -nh\ $*
+let g:tex_flavor='latex'
+autocmd Filetype tex set sw=2 | " use just a little indentation for tex
