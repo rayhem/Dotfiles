@@ -11,13 +11,13 @@ DOTFILES="conkyrc gitconfig gvimrc nethackrc vimrc zshrc"
 for file in $DOTFILES; do
     TARGET="$HOME/.$file"
     if [ -L $TARGET ]; then
-        echo "[${RedF}Symlink${Reset}] : Link $TARGET already exists, skipped.";
+        echo "[${RedF}Symlink${Reset}]: Link $TARGET already exists, skipped.";
         # uncomment below line to remove all existing symbolic links
         # rm $HOME/$file
     elif [ -f $TARGET ]; then
-        echo "[${RedF}File${Reset}] : File $TARGET already exists, skipped.";
+        echo "[${RedF}File${Reset}]: File $TARGET already exists, skipped.";
     else
         ln -sf $DOTFILE_DIR/$file $TARGET
-        echo "[${GreenF}Good${Reset}] : built symbolic link: $TARGET";
+        echo "[${GreenF}Good${Reset}]: built symbolic link: $TARGET";
     fi
 done
