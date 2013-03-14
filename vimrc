@@ -30,4 +30,4 @@ let mapleader=","
 " /usr/share/doc/vim-latexsuite/README.Debian)
 set grepprg=grep\ -nh\ $*
 let g:tex_flavor='latex'
-autocmd Filetype tex set sw=2 | " use just a little indentation for tex
+autocmd Filetype tex set sw=2 " use just a little indentation for tex
