@@ -17,10 +17,14 @@ set mouse=a
 set nocompatible    " Disable Vi-compatibility
 set noerrorbells
 set nohlsearch
-set shiftwidth=4
+set shiftwidth=2
 set showmatch
-set tabstop=4
+set tabstop=2
 set textwidth=0
+
+if has('gui_running')
+    colorscheme solarized
+endif
 
 let fortran_do_enddo=1
 let fortran_free_source=1
