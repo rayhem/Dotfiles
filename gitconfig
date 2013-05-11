@@ -12,3 +12,4 @@
   co = checkout
   df = diff
   lg = log
+  list = log --oneline
