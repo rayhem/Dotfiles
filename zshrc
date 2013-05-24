@@ -39,7 +39,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Disable hostname completion
 zstyle ':completion:*' hosts off
 
-# auto rehash commands
+# auto rehash commands, esp. after apt install
 # http://www.zsh.org/mla/users/2011/msg00531.html
 zstyle ':completion:*' rehash true
 
