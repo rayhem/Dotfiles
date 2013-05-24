@@ -6,7 +6,7 @@ RedF="${Escape}[31m"; GreenF="${Escape}[32m";
 Reset="${Escape}[0m";
 
 DOTFILE_DIR=`pwd`
-DOTFILES="conkyrc gitconfig gvimrc nethackrc vimrc zshrc"
+DOTFILES="conkyrc gitconfig nethackrc vimrc zshrc"
 
 for file in $DOTFILES; do
     TARGET="$HOME/.$file"
