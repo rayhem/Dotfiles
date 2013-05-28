@@ -2,6 +2,9 @@
 # Automatically create symbolic links to version-controlled files
 
 function checkAndBuildLink() {
+  # Checks a target link location ($2) to see if a file or symlink already
+  # exists -- if yes, print the failure and return an appropriate code. If no,
+  # link the source file ($1) to the target and return 0.
   Escape="\033";
   RedF="${Escape}[31m"; GreenF="${Escape}[32m";
   Reset="${Escape}[0m";
@@ -37,4 +40,3 @@ if [ ! -d "$HOME/.xmonad" ]; then
   echo "Building Xmonad directory"
 fi
 checkAndBuildLink "$DOTFILE_DIR/xmonad.hs" "$HOME/.xmonad/xmonad.hs"
-
