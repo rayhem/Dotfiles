@@ -15,10 +15,11 @@
 -- http://www.haskell.org/haskellwiki/Xmonad/Notable_changes_since_0.8
 --
  
-import XMonad
 import Data.Monoid
 import System.Exit
+import XMonad
 import XMonad.Layout.Spacing
+import XMonad.Util.Run(spawnPipe)
  
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -85,7 +86,7 @@ myWorkspaces    = map show [1..9]
 -- Border colors for unfocused and focused windows, respectively.
 --
 myNormalBorderColor  = "#dddddd"
-myFocusedBorderColor = "#ff0000"
+myFocusedBorderColor = "#c41425"
  
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -96,7 +97,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
  
     -- launch dmenu
-    , ((modm,               xK_p     ), spawn "exe=`dmenu_path | dmenu` && eval \"exec $exe\"")
+    , ((modm,               xK_p     ), spawn "exe=`dmenu_path | dmenu -b` && eval \"exec $exe\"")
  
     -- launch gmrun
     , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
@@ -281,7 +282,6 @@ myEventHook = mempty
 -- combining it with ewmhDesktopsLogHook.
 --
 myLogHook = return ()
- 
 ------------------------------------------------------------------------
 -- Startup hook
  
