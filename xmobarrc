@@ -11,8 +11,9 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
                     , Run Swap [] 10
                     , Run Com "whoami" [] "user" 36000
                     , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                    , Run BatteryP ["BAT0"] [] 60
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% | %eth0% - %eth1% }{ <fc=#ee9a00>%date%</fc>| %KLAN% | %whoami%"
+       , template = "%battery% | %cpu% | %memory% * %swap% | %eth0% - %eth1% }{ <fc=#ee9a00>%date%</fc> | %KLAN% | %whoami%"
 }
