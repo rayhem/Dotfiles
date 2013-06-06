@@ -24,6 +24,7 @@ set textwidth=0
 
 if has('gui_running')
     colorscheme solarized
+    set guifont=Ubuntu\ Mono\ 11
 endif
 
 let fortran_do_enddo=1
