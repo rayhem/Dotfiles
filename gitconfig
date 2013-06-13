@@ -13,4 +13,4 @@
   df = diff
   lg = log
   list = log --oneline
-  unstage = reset HEAD
+  unstage = checkout --
