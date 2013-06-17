@@ -46,6 +46,7 @@ zstyle ':completion:*' rehash true
 export EDITOR="vim"
 
 ##==ALIAS SECTION===================================##
+alias bc='bc -l'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -lh'
