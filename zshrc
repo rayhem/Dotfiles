@@ -52,7 +52,9 @@ alias la='ls -a'
 alias ll='ls -lh'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
-##==PATH VARIABLES==================================##
+
+##==CONFIGURE ENVIRONMENT===========================##
+source /opt/intel/bin/compilervars.sh intel64
 
 ##==OPTIONS=========================================##
 setopt AUTO_CD              #Turns on Auto cd for fast dir switching
