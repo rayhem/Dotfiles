@@ -43,7 +43,6 @@ zstyle ':completion:*' hosts off
 # http://www.zsh.org/mla/users/2011/msg00531.html
 zstyle ':completion:*' rehash true
 
-export EDITOR="vim"
 
 ##==ALIAS SECTION===================================##
 alias bc='bc -l'
@@ -52,9 +51,13 @@ alias la='ls -a'
 alias ll='ls -lh'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+alias open='xdg-open'
 
 ##==CONFIGURE ENVIRONMENT===========================##
-source /opt/intel/bin/compilervars.sh intel64
+#source /opt/intel/bin/compilervars.sh intel64
+#export OMPI_FC="ifort"
+
+export EDITOR="vim"
 
 ##==OPTIONS=========================================##
 setopt AUTO_CD              #Turns on Auto cd for fast dir switching
