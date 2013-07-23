@@ -34,6 +34,6 @@ let mapleader=","
 
 " Options for vim-latexsuite (recommended by
 " /usr/share/doc/vim-latexsuite/README.Debian)
-set grepprg=grep\ -nh\ $*
-let g:tex_flavor='latex'
-autocmd Filetype tex set sw=2 " use just a little indentation for tex
+" set grepprg=grep\ -nh\ $*
+" let g:tex_flavor='latex'
+" autocmd Filetype tex set sw=2 " use just a little indentation for tex
