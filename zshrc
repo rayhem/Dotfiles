@@ -54,11 +54,6 @@ alias pbpaste='xsel --clipboard --output'
 alias open='xdg-open'
 alias getwd='pwd | tr -d "\n" | pbcopy'
 
-alias bsserv_tunnel='ssh -NXv -L 3391:bsserv.dhcp:4738 glosser1@scully.egr.msu.edu'
-alias bsserv_ssh='ssh -p 3391 glosser1@localhost'
-alias set_git_repo_remote='git remote set-url origin ssh://git@localhost:3391/Data/git/multibubble.git'
-alias set_git_repo_egr='git remote set-url origin ssh://git@bsserv.dhcp:4738/Data/git/multibubble.git'
-
 ##==CONFIGURE ENVIRONMENT===========================##
 #source /opt/intel/bin/compilervars.sh intel64
 #export OMPI_FC="ifort"
