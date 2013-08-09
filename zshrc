@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# ZSH_THEME="jonathan" # daveverwer frisk gentoo jonathan josh robbyrussel 
-ZSH_THEME="daveverwer"
+# Good themes include: daveverwer frisk gentoo jonathan josh robbyrussell terminalparty
+ZSH_THEME="frisk"
 
 # Set aliases
 alias bc='bc -l'
