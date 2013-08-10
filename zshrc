@@ -2,7 +2,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Good themes include: daveverwer frisk gentoo jonathan josh robbyrussell terminalparty
-ZSH_THEME="frisk"
+ZSH_THEME="josh"
 
 # Set aliases
 alias bc='bc -l'
