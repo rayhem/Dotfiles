@@ -1,43 +1,10 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# Set up the prompt
 
-# Good themes include: daveverwer frisk gentoo jonathan josh robbyrussell terminalparty
-ZSH_THEME="josh"
+autoload -Uz promptinit
+promptinit
+prompt adam2
 
-# Set aliases
-alias bc='bc -l'
-alias la='ls -a'
-alias ll='ls -lh'
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
-alias open='xdg-open'
-alias getwd='pwd | tr -d "\n" | pbcopy'
-
-# Set options
-setopt AUTO_CD              # enables fast dir switching
-setopt AUTOPUSHD            # forces cd to behave as pushd
-setopt CORRECT              # enables spelling correction
-setopt HIST_IGNORE_ALL_DUPS # ignore duplicate history entries
-setopt HIST_IGNORE_SPACE    # ignore commands starting with a space in the hist
-setopt INC_APPEND_HISTORY   # write new history lines as they get entered
-setopt NUMERIC_GLOB_SORT    # sort globs with numbers
-setopt SHARE_HISTORY        # retrieve hist file every time hist is called
-
-# Export variables
-export EDITOR="vim"
-export TERM="xterm-256color"
-
-# Uncomment following line if you want to disable marking untracked files under
-# VCS as dirty. This makes repository status check for large repositories much,
-# much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
+setopt histignorealldups sharehistory
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
@@ -47,7 +14,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-# Use modern completion system -- who knows what this does (comes as default)
+# Use modern completion system
 autoload -Uz compinit
 compinit
 
@@ -55,7 +22,6 @@ zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
-zstyle ':completion:*' hosts off  # do not complete from hosts file
 zstyle ':completion:*' menu select=2
 eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -66,5 +32,37 @@ zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
+
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+# Disable hostname completion
+zstyle ':completion:*' hosts off
+
+# auto rehash commands, esp. after apt install
+# http://www.zsh.org/mla/users/2011/msg00531.html
+zstyle ':completion:*' rehash true
+
+
+##==ALIAS SECTION===================================##
+alias bc='bc -l'
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -lh'
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+alias open='xdg-open'
+alias getwd='pwd | tr -d "\n" | pbcopy'
+
+##==CONFIGURE ENVIRONMENT===========================##
+#source /opt/intel/bin/compilervars.sh intel64
+#export OMPI_FC="ifort"
+
+export EDITOR="vim"
+
+##==OPTIONS=========================================##
+setopt AUTO_CD              #Turns on Auto cd for fast dir switching
+setopt AUTOPUSHD            #forces cd to behave as pushd
+setopt CORRECT              #Enables spelling correction for commands
+setopt HIST_IGNORE_ALL_DUPS #Ignores duplicate history entries
+setopt NUMERIC_GLOB_SORT    #Sorts globs with numbers
