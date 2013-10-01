@@ -1,7 +1,19 @@
-call pathogen#infect()
-call pathogen#helptags()
+set nocompatible " be iMproved
+filetype off     " required for Vundle
 
-filetype plugin indent on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle -- required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+
+filetype plugin indent on " we now return to your regularly scheduled vimrc...
 
 syntax on
 
@@ -14,7 +26,6 @@ set incsearch
 "set laststatus=2    " Always show the statusline
 set matchtime=3
 set mouse=a
-set nocompatible    " Disable Vi-compatibility
 set noerrorbells
 set nohlsearch
 set pastetoggle=<F2>
