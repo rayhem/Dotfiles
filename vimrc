@@ -15,6 +15,7 @@ Bundle 'tpope/vim-surround'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle "godlygeek/tabular"
 
 filetype plugin indent on " we now return to your regularly scheduled vimrc...
 
