@@ -4,7 +4,7 @@ filetype off     " required for Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle -- required! 
+" let Vundle manage Vundle -- required!
 Bundle 'gmarik/vundle'
 
 Bundle 'altercation/vim-colors-solarized'
@@ -15,6 +15,7 @@ Bundle 'tpope/vim-surround'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle "godlygeek/tabular"
 
 filetype plugin indent on " we now return to your regularly scheduled vimrc...
 
