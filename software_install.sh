@@ -1,17 +1,40 @@
 #!/bin/bash
 
-whiptail --checklist "Select software to install" 20 60 5\
-  firefox    "Firefox"            off \
-  faenza     "Faenza"             off \
-  talkPlugin "Google Talk Plugin" off 2>distrochoice
+#if [[ $EUID -ne 0 ]]; then
+  #echo "You must be root to run this." 1>&2
+  #exit 100
+#fi
 
-CHOICE=$?
+DOWNLOAD_DIR=$(whiptail --title "Download location" --inputbox "Enter download location:" 10 78 "/home/connor/Downloads/dldir" 3>&1 1>&2 2>&3)
 
-echo $CHOICE
-DOWNLOAD_DIRECTORY="/tmp/software_bundle"
+mkdir -p $DOWNLOAD_DIR
 
-mkdir -p $DOWNLOAD_DIRECTORY 
+whiptail --title "Software selection" --checklist "Select software to install" --separate-output 20 60 5\
+  firefox    "Firefox web browser" off \
+  faenza     "Faenza icon theme"   off \
+  talkPlugin "Google Talk Plugin"  off \
+  greybird   "Greybird GTK theme"  off 2>"$DOWNLOAD_DIR/softwareList.txt"
 
-wget --recursive --no-host-directories --cut-dirs=7 --no-parent -A.bz2 --directory-prefix=$DOWNLOAD_DIRECTORY http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-x86_64/en-US/
+while read LINE; do
+  case $LINE in
+  "firefox" ) 
+    echo "Now installing Firefox..."
+    wget --no-verbose --recursive --no-host-directories --cut-dirs=7 --no-parent -A.bz2 --directory-prefix=$DOWNLOAD_DIR http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-x86_64/en-US/
+      tar -xvjf "$DOWNLOAD_DIR/firefox*.tar.bz2"
+  ;;
 
-wget --recursive --no-host-directories --cut-dirs=1 --no-parent -A.zip --directory-prefix=$DOWNLOAD_DIRECTORY https://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_1.3.zip
+  "faenza" ) 
+    wget --no-verbose --recursive --no-host-directories --cut-dirs=1 --no-parent -A.zip --directory-prefix=$DOWNLOAD_DIR https://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_1.3.zip
+  ;;
+
+  "greybird" )
+    git clone --quiet "https://github.com/shimmerproject/Greybird.git" "$DOWNLOAD_DIR/greybird"
+  ;;
+
+"talkPlugin" )
+    wget 
+
+  esac
+done < "$DOWNLOAD_DIR/softwareList.txt"
+
+

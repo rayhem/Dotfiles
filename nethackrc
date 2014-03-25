@@ -9,7 +9,9 @@ OPTIONS=catname:Rex
 OPTIONS=pickup_types:$!+="?/
 OPTIONS=boulder:0
 OPTIONS=nomail
-OPTIONS=race:Human,role:Wizard,align:Neutral,gender:Male
+OPTIONS=race:elf,role:wizard,align:lawful,gender:Male
+OPTIONS=lit_corridor
+
 
 # Enable this if you want to see your inventory sorted in alphabetical
 # order by item instead of by index letter:
@@ -28,4 +30,3 @@ MENUCOLOR=" uncursed "=yellow
 MENUCOLOR=" cursed "=red
 MENUCOLOR=" unholy "=red
 MENUCOLOR=" cursed .* (being worn)"=orange&underline
-
