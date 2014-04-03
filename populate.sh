@@ -27,7 +27,7 @@ function checkAndBuildLink() {
 }
 
 DOTFILE_DIR=`pwd`
-DOTFILES="conkyrc gitconfig nethackrc vimrc xmobarrc zshrc"
+DOTFILES="conkyrc gitconfig nethackrc vimrc xmobarrc zshrc tmux.conf"
 
 for file in $DOTFILES; do
   ORIGIN="$DOTFILE_DIR/$file"
