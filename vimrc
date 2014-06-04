@@ -5,17 +5,18 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle -- required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle "godlygeek/tabular"
-Bundle "git://git.code.sf.net/p/vim-latex/vim-latex"
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'godlygeek/tabular'
+Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 
-filetype plugin indent on " we now return to your regularly scheduled vimrc...
+call vundle#end()
+filetype plugin indent on "we now return to your regularly scheduled vimrc...
 
 syntax on
 
