@@ -1,8 +1,8 @@
 set nocompatible " be iMproved
 filetype off     " required for Vundle
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle -- required!
 Bundle 'gmarik/vundle'
