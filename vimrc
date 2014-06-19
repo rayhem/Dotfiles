@@ -45,6 +45,8 @@ set softtabstop=2
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
+nmap <leader>w :set wrap!<CR>
+
 if has('gui_running')
     colorscheme solarized
     set guifont=Ubuntu\ Mono\ 11
