@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
@@ -33,9 +34,15 @@ set noerrorbells
 set nohlsearch
 set pastetoggle=<F2>
 set showmatch
-set textwidth=0
 
-" Set tabbing rules (good idea to keep softtabstop == tabstop)
+" Wrapping rules
+set linebreak       " Don't break in-word when wrapping text
+set wrapmargin=2    " Hard wraps at -2 from last column
+set showbreak=…
+command! -nargs=* Wrap set wrap linebreak nolist
+nmap <leader>p gwip
+
+" Tabbing rules (good idea to keep softtabstop == tabstop)
 set tabstop=2
 set expandtab
 set shiftwidth=2
