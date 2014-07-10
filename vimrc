@@ -40,6 +40,7 @@ set linebreak       " Don't break in-word when wrapping text
 set wrapmargin=2    " Hard wraps at -2 from last column
 set showbreak=…
 command! -nargs=* Wrap set wrap linebreak nolist
+nmap <leader>w :set wrap!<CR>
 nmap <leader>p gwip
 
 " Tabbing rules (good idea to keep softtabstop == tabstop)
@@ -52,7 +53,6 @@ set softtabstop=2
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
-nmap <leader>w :set wrap!<CR>
 
 if has('gui_running')
     colorscheme solarized
@@ -64,9 +64,8 @@ let fortran_free_source=1
 
 " Options for vim-latexsuite (recommended by
 " /usr/share/doc/vim-latexsuite/README.Debian)
-" set grepprg=grep\ -nh\ $*
-" let g:tex_flavor='latex'
-" autocmd Filetype tex set sw=2 " use just a little indentation for tex
+set grepprg=grep\ -nh\ $*
+let g:tex_flavor='latex'
 
 augroup myvimrc
   au!
