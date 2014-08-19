@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Plugin 'chikamichi/mediawiki.vim'
 
 call vundle#end()
 filetype plugin indent on "we now return to your regularly scheduled vimrc...
