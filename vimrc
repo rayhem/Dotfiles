@@ -26,7 +26,7 @@ syntax on
 set autoindent
 set background=dark
 set backspace=indent,eol,start
-set encoding=utf-8  " Necessary to show unicode glyphs
+set encoding=utf-8   " Necessary to show unicode glyphs
 set incsearch
 "set laststatus=2    " Always show the statusline
 set matchtime=3
@@ -54,7 +54,6 @@ set softtabstop=2
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
-
 if has('gui_running')
     colorscheme solarized
     set guifont=Ubuntu\ Mono\ 11
@@ -68,7 +67,8 @@ let fortran_free_source=1
 set grepprg=grep\ -nh\ $*
 let g:tex_flavor='latex'
 
+"Auto-source vimrc on change
 augroup myvimrc
   au!
-  au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+  au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc source $MYVIMRC | if has('gui_running') | source $MYGVIMRC | endif
 augroup END
