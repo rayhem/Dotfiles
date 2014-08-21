@@ -40,3 +40,9 @@ if [ ! -d "$HOME/.xmonad" ]; then
   echo "Building Xmonad directory"
 fi
 checkAndBuildLink "$DOTFILE_DIR/xmonad.hs" "$HOME/.xmonad/xmonad.hs"
+
+if [ ! -d "$HOME/.i3" ]; then
+  mkdir $HOME/.i3
+  echo "Building i3 directory"
+fi
+checkAndBuildLink "$DOTFILE_DIR/i3config" "$HOME/.i3/config"
