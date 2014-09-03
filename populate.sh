@@ -45,4 +45,6 @@ if [ ! -d "$HOME/.i3" ]; then
   mkdir $HOME/.i3
   echo "Building i3 directory"
 fi
+
 checkAndBuildLink "$DOTFILE_DIR/i3config" "$HOME/.i3/config"
+checkAndBuildLink "$DOTFILE_DIR/UltiSnips" "$HOME/.vim/UltiSnips"
