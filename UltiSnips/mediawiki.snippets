@@ -2,8 +2,25 @@ snippet ENV "LaTeX environment snippet" b
 \begin{${2:equation}}
 	$1
 \end{$2}
+$3
+endsnippet
+
+snippet EEQ "Labeled LaTeX equation" b
+\begin{equation}
+	\label{eq:$1}
+	$2
+\end{equation}
+$3
 endsnippet
 
 snippet CAT "Insert category"
 [[Category:$1]]
+endsnippet
+
+snippet BC "Blockquote"
+<blockquote>$1</blockquote>$2
+endsnippet
+
+snippet NW "nowiki"
+<nowiki>$1</nowiki>$2
 endsnippet
