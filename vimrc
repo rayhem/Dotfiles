@@ -72,3 +72,5 @@ augroup myvimrc
   au!
   au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc source $MYVIMRC | if has('gui_running') | source $MYGVIMRC | endif
 augroup END
+
+autocmd BufRead,BufNew *.md set filetype=markdown
