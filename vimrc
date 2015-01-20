@@ -56,6 +56,7 @@ set listchars=tab:▸\ ,eol:¬
 
 if has('gui_running')
     colorscheme solarized
+    set background=light
     set guifont=Ubuntu\ Mono\ 11
 endif
 
