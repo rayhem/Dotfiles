@@ -60,6 +60,7 @@ alias getwd='pwd | tr -d "\n" | pbcopy'
 #export OMPI_FC="ifort"
 
 export EDITOR="vim"
+export TERM=xterm-256color
 
 ##==OPTIONS=========================================##
 setopt AUTO_CD              #Turns on Auto cd for fast dir switching
