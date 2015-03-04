@@ -54,9 +54,9 @@ set softtabstop=2
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
+colorscheme jellybeans
+
 if has('gui_running')
-    colorscheme solarized
-    set background=light
     set guifont=Ubuntu\ Mono\ 11
 endif
 
