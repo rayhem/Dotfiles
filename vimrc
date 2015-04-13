@@ -50,6 +50,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+"Let ctags work up a directory tree until it reaches $HOME
+set tags=./tags;$HOME
+
 " Invisible characters
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
