@@ -54,6 +54,7 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias open='xdg-open'
 alias getwd='pwd | tr -d "\n" | pbcopy'
+alias tmux='tmux attach || tmux new-session'
 
 ##==CONFIGURE ENVIRONMENT===========================##
 #source /opt/intel/bin/compilervars.sh intel64
