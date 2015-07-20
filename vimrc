@@ -35,14 +35,18 @@ set noerrorbells
 set nohlsearch
 set pastetoggle=<F2>
 set showmatch
+noremap <space> :
+noremap <leader>n :set number!<CR>
 
 " Wrapping rules
-set linebreak       " Don't break in-word when wrapping text
+set textwidth=80
 set wrapmargin=2    " Hard wraps at -2 from last column
+set linebreak       " Don't break in-word when wrapping text
 set showbreak=…
 command! -nargs=* Wrap set wrap linebreak nolist
-nmap <leader>w :set wrap!<CR>
-nmap <leader>p gwip
+command Rtw %s/\s\+$//g  " Remove trailing whitespace
+noremap <leader>w :set wrap!<CR>
+noremap <leader>p gwip
 
 " Tabbing rules (good idea to keep softtabstop == tabstop)
 set tabstop=2
@@ -54,7 +58,7 @@ set softtabstop=2
 set tags=./tags;$HOME
 
 " Invisible characters
-nmap <leader>l :set list!<CR>
+noremap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 colorscheme jellybeans
