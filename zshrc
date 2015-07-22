@@ -62,7 +62,6 @@ alias tmux='tmux attach || tmux new-session'
 
 export EDITOR="vim"
 export TERM=xterm-256color
-export PATH=$PATH:/home/connor/.anaconda/bin
 
 ##==OPTIONS=========================================##
 setopt AUTO_CD              #Turns on Auto cd for fast dir switching
