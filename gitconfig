@@ -14,5 +14,6 @@
   lg = log
   list = log --oneline
   unstage = checkout --
+  yolo = !sh -c \"git commit -m '$(curl -s http://whatthecommit.com/index.txt)'\"    
 [push]
 	default = matching
