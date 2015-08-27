@@ -3,7 +3,7 @@
 #
 OPTIONS=windowtype:tty,toptenwin,hilite_pet,!number_pad,hpmon
 OPTIONS=fixinv,safe_pet,sortpack,tombstone,color
-OPTIONS=verbose,news,fruit:potato
+OPTIONS=verbose,news,fruit:potato,showexp,time
 OPTIONS=dogname:Slinky
 OPTIONS=catname:Rex
 OPTIONS=pickup_types:$!+="?/
@@ -15,7 +15,7 @@ OPTIONS=lit_corridor
 
 # Enable this if you want to see your inventory sorted in alphabetical
 # order by item instead of by index letter:
-# OPTIONS=sortloot:full
+#OPTIONS=sortloot:full
 # or if you just want containers sorted:
 OPTIONS=sortloot:loot
 
