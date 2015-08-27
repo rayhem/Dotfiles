@@ -6,14 +6,15 @@
 [color]
   ui = auto
 [alias]
-  st = status
-  ci = commit
   br = branch
+  ci = commit
   co = checkout
   df = diff
   lg = log
   list = log --oneline
+  nuke = reset --hard HEAD
+  st = status
   unstage = checkout --
-  yolo = !sh -c \"git commit -m '$(curl -s http://whatthecommit.com/index.txt)'\"    
+  yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
 [push]
 	default = matching
