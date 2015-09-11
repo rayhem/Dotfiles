@@ -44,7 +44,7 @@ set wrapmargin=2    " Hard wraps at -2 from last column
 set linebreak       " Don't break in-word when wrapping text
 set showbreak=…
 command! -nargs=* Wrap set wrap linebreak nolist
-command Rtw %s/\s\+$//g  " Remove trailing whitespace
+command Rws %s/\s\+$//g  " Remove trailing whitespace
 noremap <leader>w :set wrap!<CR>
 noremap <leader>p gwip
 
