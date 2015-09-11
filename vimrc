@@ -13,7 +13,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surroun'
 Plugin 'godlygeek/tabular'
 Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Plugin 'chikamichi/mediawiki.vim'
@@ -44,7 +44,7 @@ set wrapmargin=2    " Hard wraps at -2 from last column
 set linebreak       " Don't break in-word when wrapping text
 set showbreak=…
 command! -nargs=* Wrap set wrap linebreak nolist
-command Rws %s/\s\+$//g  " Remove trailing whitespace
+command Rws %s/\s\+$//g|norm!``  " Remove trailing whitespace
 noremap <leader>w :set wrap!<CR>
 noremap <leader>p gwip
 
