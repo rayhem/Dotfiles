@@ -8,11 +8,12 @@
 [alias]
   br = branch
   ci = commit
+  cleanmerge = !find . -name '*.orig' -delete
   co = checkout
   df = diff
   lg = log
   lol= log --oneline --graph
-  nuke = reset --hard HEAD
+  nuke = !git reset --hard HEAD && git clean -dxf
   st = status
   unstage = checkout --
   yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
