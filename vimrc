@@ -6,17 +6,18 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle -- required!
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chikamichi/mediawiki.vim'
+Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Plugin 'godlygeek/tabular'
+Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surroun'
-Plugin 'godlygeek/tabular'
-Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
-Plugin 'chikamichi/mediawiki.vim'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 filetype plugin indent on "we now return to your regularly scheduled vimrc...
