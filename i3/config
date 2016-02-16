@@ -196,5 +196,8 @@ bindsym $mod+Return exec i3-sensible-terminal
   # Set the desktop wallpaper
   exec_always feh --bg-scale /home/connor/Pictures/wallpapers/stars.png
 
+  # Enable power management
+  exec –no-startup-id sleep 3 && xfce4-power-manager
+
   assign [class="Iceweasel"] $workspace1
   for_window [class="Keepassx"] floating enable
