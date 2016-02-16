@@ -2,7 +2,7 @@
 
 autoload -Uz promptinit
 promptinit
-prompt adam2 8bit
+prompt adam2 8bit blue
 
 setopt histignorealldups sharehistory
 
