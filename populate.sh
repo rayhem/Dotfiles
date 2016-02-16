@@ -27,7 +27,7 @@ function checkAndBuildLink() {
 }
 
 DOTFILE_DIR=`pwd`
-DOTFILES="conkyrc gitconfig nethackrc vimrc xmobarrc zshrc tmux.conf gnuplot"
+DOTFILES="conkyrc gitconfig nethackrc vimrc xmobarrc zshrc tmux.conf gnuplot latexmkrc"
 
 for file in $DOTFILES; do
   ORIGIN="$DOTFILE_DIR/$file"
@@ -36,16 +36,16 @@ for file in $DOTFILES; do
 done
 
 if [ ! -d "$HOME/.xmonad" ]; then
-  mkdir $HOME/.xmonad
   echo "Building Xmonad directory"
+  mkdir $HOME/.xmonad
 fi
 checkAndBuildLink "$DOTFILE_DIR/xmonad.hs" "$HOME/.xmonad/xmonad.hs"
 
 if [ ! -d "$HOME/.i3" ]; then
-  mkdir $HOME/.i3
   echo "Building i3 directory"
+  checkAndBuildLink "$DOTFILE_DIR/i3" "$HOME/.i3"
 fi
 
-checkAndBuildLink "$DOTFILE_DIR/i3config"    "$HOME/.i3/config"
+checkAndBuildLink "$DOTFILE_DIR/i3"          "$HOME/.i3"
 checkAndBuildLink "$DOTFILE_DIR/UltiSnips"   "$HOME/.vim/UltiSnips"
-checkAndBuildLink "$DOTFILE_DIR/config.fish" "$HOME/.config/fish/"
+checkAndBuildLink "$DOTFILE_DIR/config.fish" "$HOME/.config/fish/config.fish"
