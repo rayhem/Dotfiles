@@ -91,7 +91,7 @@ bindsym $mod+Return exec i3-sensible-terminal
   set $workspace7 "7 "
   set $workspace8 "8 "
   set $workspace9 "9 "
-  set $workspace10 "10 "
+  set $workspace10 "10 "
 
   # switch to workspace
   bindsym $mod+1 workspace $workspace1
@@ -184,5 +184,7 @@ bindsym $mod+Return exec i3-sensible-terminal
   # Enable power management
   exec –no-startup-id sleep 3 && xfce4-power-manager
 
-  assign [class="Iceweasel"] $workspace1
+  assign [class="Iceweasel"]  $workspace1
+  assign [class="Clementine"] $workspace10
+  assign [class="Vlc"]        $workspace10
   for_window [class="Keepassx"] floating enable
