@@ -182,7 +182,7 @@ bindsym $mod+Return exec i3-sensible-terminal
   exec_always feh --bg-scale /home/connor/Pictures/wallpapers/stars.png
 
   # Enable power management
-  exec –no-startup-id sleep 3 && xfce4-power-manager
+  exec --no-startup-id sleep 3 && xfce4-power-manager
 
   assign [class="Iceweasel"]  $workspace1
   assign [class="Clementine"] $workspace10
