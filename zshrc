@@ -46,14 +46,15 @@ zstyle ':completion:*' rehash true
 
 ##==ALIAS SECTION===================================##
 alias bc='bc -l'
+alias getwd='pwd | tr -d "\n" | pbcopy'
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -lh'
+alias lmk='latexmk -pdf -pvc'
+alias ls='ls --color=auto'
+alias open='xdg-open'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
-alias open='xdg-open'
-alias getwd='pwd | tr -d "\n" | pbcopy'
 alias tmux='tmux attach || tmux new-session'
 
 ##==CONFIGURE ENVIRONMENT===========================##
