@@ -171,6 +171,10 @@ bindsym $mod+Return exec i3-sensible-terminal
   }
 
 # -- Applications
+  bindsym $mod+m exec mathematica
+
+  # lock the screen
+  bindsym $mod+x exec slock
 
   # kill focused window
   bindsym $mod+Shift+q kill
