@@ -83,3 +83,10 @@ augroup myvimrc
 augroup END
 
 autocmd BufRead,BufNew *.md set filetype=markdown
+
+function SetLaTeXOptions()
+  setlocal textwidth=0
+  setlocal wrapmargin=0
+endfunction
+
+autocmd FileType tex call SetLaTeXOptions()
