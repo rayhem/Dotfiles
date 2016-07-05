@@ -2,25 +2,22 @@ set nocompatible " be iMproved
 filetype off     " required for Vundle
 let mapleader=","
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle -- required!
-Plugin 'VundleVim/Vundle.vim'
+Plug 'SirVer/ultisnips'
+Plug 'chikamichi/mediawiki.vim', { 'for': 'mediawiki' }
+Plug 'vim-latex/vim-latex', { 'for': 'tex' }
+Plug 'godlygeek/tabular'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 
-Plugin 'SirVer/ultisnips'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'chikamichi/mediawiki.vim'
-Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
-Plugin 'godlygeek/tabular'
-Plugin 'rust-lang/rust.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
+call plug#end()
 
-call vundle#end()
-filetype plugin indent on "we now return to your regularly scheduled vimrc...
+"we now return to your regularly scheduled vimrc...
+filetype plugin indent on
 
 syntax on
 
