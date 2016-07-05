@@ -172,6 +172,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # -- Applications
   bindsym $mod+m exec mathematica
+  bindsym $mod+t exec thunar
 
   # lock the screen
   bindsym $mod+x exec slock
