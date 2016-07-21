@@ -48,6 +48,7 @@ zstyle ':completion:*' rehash true
 alias bc='bc -l'
 alias getwd='pwd | tr -d "\n" | pbcopy'
 alias grep='grep --color=auto'
+alias ipython='ipython3 --pylab'
 alias la='ls -a'
 alias ll='ls -lh'
 alias lmk='latexmk -pdf -pvc'
