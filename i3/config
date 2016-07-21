@@ -189,6 +189,7 @@ bindsym $mod+Return exec i3-sensible-terminal
   # Enable power management
   exec --no-startup-id sleep 3 && xfce4-power-manager
 
+  exec --no-startup-id compton -CGb
   exec --no-startup-id dropbox start
   exec --no-startup-id workrave start
 
