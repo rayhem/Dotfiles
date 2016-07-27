@@ -199,5 +199,6 @@ bindsym $mod+Return exec i3-sensible-terminal
   for_window [class="Keepassx"] floating enable
 
   # Link in the sound knob
+  bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
   bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +10%
   bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10%
