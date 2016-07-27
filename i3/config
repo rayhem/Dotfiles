@@ -197,3 +197,7 @@ bindsym $mod+Return exec i3-sensible-terminal
   assign [class="Clementine"] $workspace10
   assign [class="Vlc"]        $workspace10
   for_window [class="Keepassx"] floating enable
+
+  # Link in the sound knob
+  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +10%
+  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10%
