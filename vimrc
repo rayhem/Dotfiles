@@ -77,17 +77,10 @@ set foldlevel=1
 set grepprg=grep\ -nh\ $*
 let g:tex_flavor='latex'
 
-"Auto-source vimrc on change
-augroup myvimrc
-  au!
-  au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc source $MYVIMRC | if has('gui_running') | source $MYGVIMRC | endif
-augroup END
-
 autocmd BufRead,BufNew *.md set filetype=markdown
 
 function SetLaTeXOptions()
   setlocal textwidth=0
   setlocal wrapmargin=0
 endfunction
-
 autocmd FileType tex call SetLaTeXOptions()
