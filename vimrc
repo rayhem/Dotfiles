@@ -25,6 +25,7 @@ set autoindent
 set background=dark
 set backspace=indent,eol,start
 set encoding=utf-8   " Necessary to show unicode glyphs
+set foldmethod=syntax
 set incsearch
 "set laststatus=2    " Always show the statusline
 set matchtime=3
@@ -65,8 +66,11 @@ if has('gui_running')
     set guifont=Ubuntu\ Mono\ 11
 endif
 
+" Fortran stuff
 let fortran_do_enddo=1
+let fortran_fold=1
 let fortran_free_source=1
+set foldlevel=1
 
 " Options for vim-latexsuite (recommended by
 " /usr/share/doc/vim-latexsuite/README.Debian)
