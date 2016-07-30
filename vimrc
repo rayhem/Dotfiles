@@ -26,7 +26,7 @@ set background=dark
 set backspace=indent,eol,start
 set encoding=utf-8   " Necessary to show unicode glyphs
 set foldmethod=syntax
-set incsearch
+set incsearch " search as characters are entered
 "set laststatus=2    " Always show the statusline
 set matchtime=3
 set mouse=a
