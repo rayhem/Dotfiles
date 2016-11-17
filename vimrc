@@ -26,7 +26,8 @@ set background=dark
 set backspace=indent,eol,start
 set encoding=utf-8   " Necessary to show unicode glyphs
 set foldmethod=syntax
-set incsearch " search as characters are entered
+set incsearch
+set include=^\\s*#\\s*include\ \\(<boost/\\)\\@! "ignore boost headers
 "set laststatus=2    " Always show the statusline
 set matchtime=3
 set mouse=a
@@ -63,7 +64,7 @@ set listchars=tab:▸\ ,eol:¬
 colorscheme jellybeans
 
 if has('gui_running')
-    set guifont=Ubuntu\ Mono\ 11
+    set guifont=Inconsolata\ 12
 endif
 
 " Fortran stuff

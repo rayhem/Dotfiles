@@ -43,20 +43,9 @@ zstyle ':completion:*' hosts off
 # http://www.zsh.org/mla/users/2011/msg00531.html
 zstyle ':completion:*' rehash true
 
-
-##==ALIAS SECTION===================================##
-alias bc='bc -l'
-alias getwd='pwd | tr -d "\n" | pbcopy'
-alias grep='grep --color=auto'
-alias ipython='ipython3 --pylab'
-alias la='ls -a'
-alias ll='ls -lh'
-alias lmk='latexmk -pdf -pvc'
-alias ls='ls --color=auto'
-alias open='xdg-open'
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
-alias tmux='tmux attach || tmux new-session'
+if [ -f ~/.dotfiles/aliases ]; then
+  source ~/.dotfiles/aliases
+fi
 
 ##==CONFIGURE ENVIRONMENT===========================##
 #source /opt/intel/bin/compilervars.sh intel64
