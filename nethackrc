@@ -9,7 +9,7 @@ OPTIONS=catname:Rex
 OPTIONS=pickup_types:$!+="?/
 OPTIONS=boulder:0
 OPTIONS=nomail
-OPTIONS=race:elf,role:wizard,align:lawful,gender:Male
+OPTIONS=race:human,role:wizard,align:neutral,gender:Male
 OPTIONS=lit_corridor
 
 
