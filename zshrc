@@ -53,6 +53,7 @@ fi
 
 export EDITOR="vim"
 export TERM=xterm-256color
+export PATH=/home/connor/.anaconda3/bin:$PATH
 
 ##==OPTIONS=========================================##
 setopt AUTO_CD              #Turns on Auto cd for fast dir switching

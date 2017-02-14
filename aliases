@@ -11,3 +11,5 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias ssh-add='ssh-add -t 1h'
 alias units='units --exponential'
+
+export PATH=/home/connor/.anaconda3/bin:$PATH
