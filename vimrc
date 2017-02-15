@@ -6,13 +6,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'SirVer/ultisnips'
 Plug 'chikamichi/mediawiki.vim', { 'for': 'mediawiki' }
-Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 
 call plug#end()
 
