@@ -17,5 +17,3 @@
   st = status
   unstage = checkout --
   yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
-[push]
-	default = upstream
