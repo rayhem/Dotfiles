@@ -31,3 +31,12 @@ set noerrorbells
 
 " Remove trailing whitespace
 command Rws %s/\s\+$//g|norm!``
+
+" == Tabbing rules ==
+" Auto insert spaces instead of tabs
+set expandtab
+
+" Set up spaces-as-tabs
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2 " Needs to be set to allow backspacing
