@@ -43,8 +43,9 @@ zstyle ':completion:*' hosts off
 # http://www.zsh.org/mla/users/2011/msg00531.html
 zstyle ':completion:*' rehash true
 
-if [ -f ~/.dotfiles/aliases ]; then
-  source ~/.dotfiles/aliases
+alias_file=~/.dotfiles/aliases.sh
+if [ -f $alias_file ]; then
+  source $alias_file
 fi
 
 ##==CONFIGURE ENVIRONMENT===========================##
