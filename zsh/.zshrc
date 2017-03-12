@@ -48,12 +48,8 @@ if [ -f ~/.dotfiles/aliases ]; then
 fi
 
 ##==CONFIGURE ENVIRONMENT===========================##
-#source /opt/intel/bin/compilervars.sh intel64
-#export OMPI_FC="ifort"
-
 export EDITOR="vim"
 export TERM=xterm-256color
-export PATH=/home/connor/.anaconda3/bin:$PATH
 
 ##==OPTIONS=========================================##
 setopt AUTO_CD              #Turns on Auto cd for fast dir switching
