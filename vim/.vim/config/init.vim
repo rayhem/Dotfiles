@@ -7,6 +7,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'chikamichi/mediawiki.vim', { 'for' : 'mediawiki' }
 Plug 'rust-lang/rust.vim',       { 'for' : 'rust' }
 Plug 'vim-latex/vim-latex',      { 'for' : 'tex' }
+Plug 'rhysd/vim-clang-format',   { 'for' : 'cpp' }
 
 " editing 
 Plug 'SirVer/ultisnips'
