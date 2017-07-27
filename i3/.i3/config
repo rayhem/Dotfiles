@@ -193,6 +193,8 @@ bindsym $mod+Return exec i3-sensible-terminal
   exec --no-startup-id dropbox start
   exec --no-startup-id workrave start
 
+  exec --no-startup-id "xinput set-prop 'Logitech USB Trackball' 'Device Accel Constant Deceleration' 0.5"
+
   assign [class="Iceweasel"]  $workspace1
   assign [class="Clementine"] $workspace10
   assign [class="Vlc"]        $workspace10
