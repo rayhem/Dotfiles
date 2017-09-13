@@ -14,3 +14,8 @@ noremap <leader>w :set wrap!<CR>
 " Toggle invisible characters
 set listchars=tab:▸\ ,eol:¬
 noremap <leader>l :set list!<CR>
+
+noremap <buffer> <silent> k gk
+noremap <buffer> <silent> j gj
+noremap <buffer> <silent> 0 g0
+noremap <buffer> <silent> $ g$
