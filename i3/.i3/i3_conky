@@ -73,6 +73,8 @@ TEXT
 ${if_up eth0}eth0 ${addr eth0} | ${endif}\
 # Wireless status
 ${if_up wlan0}wlan0 ${addr wlan0} | ${endif}\
+# Battery status
+${if_smapi_bat_installed BAT0} BAT ${battery_percent}% | ${endif}\
 # CPU stats
 CPU ${cpu cpu1}% ${freq_g 1}GHz ${exec sensors | grep -m 1 "Core 0"|awk '{print $3}'} | \
 #Time and date
