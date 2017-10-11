@@ -11,6 +11,10 @@ Plug 'rhysd/vim-clang-format',   { 'for' : 'cpp' }
 
 " editing 
 Plug 'SirVer/ultisnips'
+if isdirectory($HOME."/.vim/UltiSnips")
+  let g:UltiSnipsSnippetDirectories=[$HOME."/.vim/UltiSnips"]
+endif
+
 Plug 'godlygeek/tabular'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
