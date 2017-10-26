@@ -1,9 +1,14 @@
 snippet print "std::cout << $1 << std::endl;"
 std::cout << $1 << std::endl;
-$0
 endsnippet
 
 snippet ostream_iterator "std::ostream_iterator<>(...); std::copy(...)"
 std::ostream_iterator<$1> ${2:out_it}(${3:std::cout}, ${4:", "});
 std::copy($5.begin(), $5.end(), $2);
+endsnippet
+
+snippet fori "index-based for loop"
+for(auto ${1:i} = ${2:0l}; $1 < $4; ${5:++$1}) {
+	$0
+}
 endsnippet
