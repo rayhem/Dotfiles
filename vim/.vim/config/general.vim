@@ -32,6 +32,9 @@ set noerrorbells
 " Remove trailing whitespace
 command Rws %s/\s\+$//g|norm!``
 
+" Set vim directory to directory of current file
+command Setdir cd %:p:h
+
 " == Tabbing rules ==
 " Auto insert spaces instead of tabs
 set expandtab
