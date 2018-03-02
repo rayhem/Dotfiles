@@ -14,7 +14,8 @@ set backspace=indent,eol,start
 set encoding=utf-8
 
 " Use syntax highlighting to specify folds
-set foldmethod=syntax
+"set foldmethod=syntax
+set foldmethod=manual
 
 " Show incremental search matches as they are typed
 set incsearch
