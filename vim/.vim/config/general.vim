@@ -44,3 +44,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2 " Needs to be set to allow backspacing
+
+" Adjust splitting rules
+set splitright
+set splitbelow
