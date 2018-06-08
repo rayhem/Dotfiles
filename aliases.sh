@@ -13,4 +13,4 @@ alias ssh-add='ssh-add -t 1h'
 alias units='units --exponential'
 alias clangify='export CC=/usr/bin/clang && export CXX=/usr/bin/clang++'
 
-export PATH=/home/connor/.anaconda3/bin:$PATH
+export PATH=$HOME/.anaconda3/bin:$PATH:$HOME/.cargo/bin
