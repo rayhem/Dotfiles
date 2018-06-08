@@ -72,7 +72,7 @@ TEXT
 # Ethernet status
 ${if_up eth0}eth0 ${addr eth0} | ${endif}\
 # Wireless status
-${if_up wlan0}wlan0 ${addr wlan0} | ${endif}\
+${if_up wlp2s0}wlan ${addr wlp2s0} | ${endif}\
 # Battery status
 #${if_smapi_bat_installed BAT0} BAT ${battery_percent}% | ${endif}\
 ${smapi_bat_bar} |\
