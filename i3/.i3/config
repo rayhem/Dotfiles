@@ -171,6 +171,7 @@ bindsym $mod+Return exec i3-sensible-terminal
   }
 
 # -- Applications
+  bindsym $mod+i exec firefox
   bindsym $mod+m exec mathematica
   bindsym $mod+t exec thunar
 
@@ -192,10 +193,10 @@ bindsym $mod+Return exec i3-sensible-terminal
   exec --no-startup-id compton -CGb
   exec --no-startup-id dropbox start
   exec --no-startup-id workrave start
+  exec --no-startup-id nm-applet
 
   exec --no-startup-id "xinput set-prop 'Logitech USB Trackball' 'Device Accel Constant Deceleration' 0.5"
 
-  assign [class="Iceweasel"]  $workspace1
   assign [class="Clementine"] $workspace10
   assign [class="Vlc"]        $workspace10
   for_window [class="Keepassx"] floating enable
