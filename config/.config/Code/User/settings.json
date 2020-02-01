@@ -32,4 +32,8 @@
             ]
         }
     ],
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Droid Sans Mono', Ubuntu mono, 'monospace', monospace, 'Droid Sans Fallback'",
 }
