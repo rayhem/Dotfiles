@@ -170,6 +170,16 @@ bindsym $mod+Return exec i3-sensible-terminal
     }
   }
 
+# -- Multi monitor
+
+  workspace $workspace1 output primary
+  workspace $workspace2 output primary
+  workspace $workspace3 output primary
+  workspace $workspace4 output primary
+  workspace $workspace5 output primary
+
+  exec --no-startup-id ~/.screenlayout/yendor.sh
+
 # -- Applications
   bindsym $mod+i exec firefox
   bindsym $mod+m exec mathematica
