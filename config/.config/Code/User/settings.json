@@ -1,15 +1,14 @@
 {
     "breadcrumbs.enabled": true,
     "editor.formatOnSave": true,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "boundary",
     "editor.rulers": [
-        80
+        80,
     ],
     "files.autoSave": "off",
     "git.enableSmartCommit": true,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.activityBar.visible": true,
-    "workbench.iconTheme": "vscode-icons",
     "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": true,
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -34,6 +33,13 @@
     ],
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "editor.fontSize": 16,
-    "editor.fontFamily": "'Droid Sans Mono', Ubuntu mono, 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "Source Code Pro, 'Droid Sans Mono', Ubuntu mono, 'monospace', monospace, 'Droid Sans Fallback'",
+    "latex-workshop.view.pdf.viewer": "external",
+    "rust-client.rustupPath": "/home/connor/.cargo/bin/rustup",
+    "git.autofetch": true,
+    "python.pythonPath": "/usr/bin/python3",
+    "python.formatting.provider": "black",
+    "window.zoomLevel": 1,
+    "git.confirmSync": false,
+    "github.gitAuthentication": false,
 }
