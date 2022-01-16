@@ -178,7 +178,8 @@ bindsym $mod+Return exec i3-sensible-terminal
   workspace $workspace4 output primary
   workspace $workspace5 output primary
 
-  exec --no-startup-id ~/.screenlayout/yendor.sh
+  exec --no-startup-id sleep 1 && ~/.screenlayout/yendor.sh
+  exec --no-startup-id feh --bg-center /home/connor/.config/wallpapers/debian11_2560x1440.png /home/connor/.config/wallpapers/debian11_1080x1920.png
 
 # -- Applications
   bindsym $mod+i exec firefox
