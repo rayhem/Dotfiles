@@ -2,7 +2,7 @@
   name  = Connor Glosser
   email = glosser1@gmail.com
 [merge]
-  tool = meld
+	tool = bc
 [color]
   ui = auto
 [alias]
@@ -19,3 +19,14 @@
   yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
 [push]
 	default = simple
+[pull]
+	rebase = false
+[mergetool "bc"]
+	trustExitCode = true
+[diff]
+	tool = bcompare
+[difftool]
+	prompt = false
+	bc = trustExitCode
+[mergetool]
+	bc = trustExitCode
