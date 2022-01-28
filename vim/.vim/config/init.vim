@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " colorschemes
 Plug 'nanotech/jellybeans.vim'
+Plug 'tomasiser/vim-code-dark'
 
 " languages
 Plug 'chikamichi/mediawiki.vim', { 'for' : 'mediawiki' }
