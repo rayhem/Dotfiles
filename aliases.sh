@@ -1,4 +1,5 @@
 alias bc='bc -l'
+alias clangify='export CC=/usr/bin/clang && export CXX=/usr/bin/clang++'
 alias getwd='pwd | tr -d "\n" | pbcopy'
 alias grep='grep --color=auto'
 alias ipython='ipython3 --pylab'
@@ -11,6 +12,5 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias ssh-add='ssh-add -t 1h'
 alias units='units --exponential'
-alias clangify='export CC=/usr/bin/clang && export CXX=/usr/bin/clang++'
 
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin
