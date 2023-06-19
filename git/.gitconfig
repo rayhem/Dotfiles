@@ -1,10 +1,6 @@
 [user]
   name  = Connor Glosser
   email = glosser1@gmail.com
-[merge]
-	tool = bc
-[color]
-  ui = auto
 [alias]
   br = branch
   ci = commit
@@ -17,16 +13,24 @@
   st = status
   unstage = checkout --
   yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+[color]
+  ui = auto
 [push]
-	default = simple
+  default = simple
 [pull]
-	rebase = false
-[mergetool "bc"]
-	trustExitCode = true
+  rebase = false
 [diff]
-	tool = bcompare
+  tool = bc
 [difftool]
-	prompt = false
-	bc = trustExitCode
+  prompt = false
+[difftool "bc"]
+  trustExitCode = true
+[merge]
+  tool = bc
 [mergetool]
-	bc = trustExitCode
+  prompt = false
+[mergetool "bc"]
+  trustExitCode = true
+  prompt = false
+[init]
+  defaultBranch = main
