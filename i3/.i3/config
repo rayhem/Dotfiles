@@ -183,6 +183,10 @@ bindsym $mod+Return exec i3-sensible-terminal
   bindsym $mod+m exec mathematica
   bindsym $mod+t exec thunar
 
+  # screenshot 
+  bindsym Print       exec scrot --focused '%Y-%m-%d_$wx$h_scrot.png' --exec 'mv $f ~/Scratch'
+  bindsym Shift+Print exec scrot           '%Y-%m-%d_$wx$h_scrot.png' --exec 'mv $f ~/Scratch'
+
   # lock the screen
   bindsym --release $mod+x exec slock
 
