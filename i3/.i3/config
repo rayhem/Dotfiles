@@ -121,18 +121,17 @@ bindsym $mod+Return exec i3-sensible-terminal
   # resize window (you can also use the mouse); these bindings trigger as soon
   # as you enter the resize mode
   mode "resize" {
-
     # Vim keybindings
-    bindsym j resize shrink width 10 px or 10 ppt
-    bindsym k resize grow height 10 px or 10 ppt
-    bindsym l resize shrink height 10 px or 10 ppt
-    bindsym semicolon resize grow width 10 px or 10 ppt
+    bindsym j         resize shrink width  10 px or 10 ppt
+    bindsym k         resize grow   height 10 px or 10 ppt
+    bindsym l         resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow   width  10 px or 10 ppt
 
     # same bindings, but for the arrow keys
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Left  resize shrink width  10 px or 10 ppt
+    bindsym Down  resize grow   height 10 px or 10 ppt
+    bindsym Up    resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow   width  10 px or 10 ppt
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -184,8 +183,8 @@ bindsym $mod+Return exec i3-sensible-terminal
   bindsym $mod+t exec thunar
 
   # screenshot 
-  bindsym Print       exec scrot --focused '%Y-%m-%d_$wx$h_scrot.png' --exec 'mv $f ~/Scratch'
-  bindsym Shift+Print exec scrot           '%Y-%m-%d_$wx$h_scrot.png' --exec 'mv $f ~/Scratch'
+  bindsym Print       exec scrot --focused '%Y-%m-%dT%H:%M:%S_$wx$h_scrot.png' --exec 'mv $f ~/Scratch'
+  bindsym Shift+Print exec scrot           '%Y-%m-%dT%H:%M:%S_$wx$h_scrot.png' --exec 'mv $f ~/Scratch'
 
   # lock the screen
   bindsym --release $mod+x exec slock
