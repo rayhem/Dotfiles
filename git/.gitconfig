@@ -34,3 +34,7 @@
   prompt = false
 [init]
   defaultBranch = main
+[safe]
+	directory = /opt/helix/runtime/grammars/*
+[core]
+	editor = hx
